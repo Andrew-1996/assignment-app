@@ -37,6 +37,28 @@ h1{
     display: inline-block;
     background-color: #3873f3;
     margin: 15px 0;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+    animation-delay: 0.3s;
+}
+.header-anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+    animation-delay: 0.3s;
+}
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+    animation-delay: 0.6s;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
 .common-btn{
@@ -49,6 +71,10 @@ h1{
     cursor: pointer;
     color: #fff;
     transition: 0.3s;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+    animation-delay: 1.2s;
 }
 
 p{
@@ -56,6 +82,7 @@ p{
     line-height: 18px;
     color: #c8d4d5;
     margin-bottom: 10px;
+    animation-delay: 0.5s;
 }
 
 .header-text button{
@@ -67,18 +94,30 @@ p{
     height: 15px;
     background: #3873f3;
     display: inline-block;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+    animation-delay: 1.2s;
 }
 .line-2{
     width: 80px;
     height: 1px;
     background: #3873f3;
     display: inline-block;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+    animation-delay: 1.2s;
 }
 .line-3{
     width: 60px;
     height: 1px;
     background: #3873f3;
     display: inline-block;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+    animation-delay: 1.2s;
 }
 .line{
     line-height: 8px;
