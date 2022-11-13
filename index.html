@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <title> Website Design - FIFA </title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <section id="header">
+        <div class="container">
+            <img src="assets/fifa-logo.png" class="logo">
+            <div class="header-text">
+                <h1> Qatar 2022: <br> Groups, fixtures, stadiums, squads, tickets and more. </h1>
+                <span class="square"></span>
+                <p> See groups and fixtures, read information on stadiums, squads and substitutes, apply for tickets and watch video content on Qatar 2022. </p>
+                <button class="common-btn"> Explore </button>
+                <!-- Section Separator -->
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+            </div>        
+        </div>
+    </section>
+
+    <nav id="sideNav">
+        <ul>
+            <li> <a href="#">HOME</a> </li>
+            <li> <a href="#">ABOUT QATAR</a> </li>
+            <li> <a href="#">FIXTURES</a> </li>
+            <li> <a href="#">GALLERY</a> </li>
+        </ul>
+    </nav>
+    <img src="assets/bars-solid.svg" id="menuBtn">
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+
+        sideNav.style.right = "-250px";
+        menuBtn.onclick = function() {
+            if ( sideNav.style.right == "-250px") {
+                sideNav.style.right = "0px";
+            } 
+            else {
+                sideNav.style.right = "-250px";
+            }
+        }
+    </script>
+
+</body>
+</html>
