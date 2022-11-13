@@ -48,6 +48,7 @@ h1{
     font-weight: bold;
     cursor: pointer;
     color: #fff;
+    transition: 0.3s;
 }
 
 p{
@@ -112,4 +113,7 @@ nav ul li a{
     top: 35px;
     z-index: 2;
     cursor: pointer;
+}
+.common-btn:hover{
+    background: #8e04ebce;
 }
