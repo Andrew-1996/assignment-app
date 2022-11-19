@@ -156,3 +156,225 @@ nav ul li a{
 .common-btn:hover{
     background: #5d04ebaf;
 }
+
+/*--Groups--*/
+
+#groups{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #22191a;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+#groups::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #22191a;
+    clip-path: inset(47% 0 0 0);
+    z-index: -1;
+}
+
+.groups-left-col{
+    flex-basis: 50%;
+}
+
+.groups-left-col img{
+    width: 100%;
+    background-position: left;
+    background-size: cover;
+    opacity: 0.75;
+    border-radius: 0 1% 1% 0;
+
+}
+
+.groups-right-col{
+    flex-basis: 50%;
+    width: 100px;
+    background: #22191a;
+    overflow: hidden;
+    text-align: right;
+}
+
+.groups-text{
+    max-width: 300px;
+    margin-top: 10px;
+    margin-right: 80px;
+    display: inline-block;
+}
+
+.groups-text p{
+    margin: 15px 0 10px;
+    font-size: 15px;
+    color: #c8d4d5;
+}
+
+.groups-text .line{
+    margin-bottom: 60px;
+}
+
+.groups-right-col .main-card{
+    width: 200%;
+    display: flex;
+    justify-content: space-evenly;
+    transition: all 1s ease;
+}
+
+#two:checked ~ .main-card{
+    margin-left: -100%;
+}
+
+.main-card .cards{
+    width: calc(100% / 2 - 10px);
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+.main-card .cards .card{
+    background: #ffffff;
+    width: calc(100% / 4 - 10px);
+    padding: 20px;
+    border-radius: 15px;
+    background: #2166fa;
+    padding: 2px;
+    transition: all 0.4s ease;
+}
+
+.main-card .cards .card:hover{
+    transform: translateY(-15px);
+}
+
+.cards .card .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cards .card .content .img{
+    height: 100px;
+    width: 100px;
+    margin-bottom: 16px;
+    border-radius: 50%;
+}
+
+.cards .card .content .img img{
+    margin-top: 10px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+.card .content .details .group-name{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 5px;
+}
+
+.card .content .details .countries{
+    font-size: 15px;
+    color: #00b7ff;
+}
+
+.card .content .countries-icons{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.card .content .countries-icons img{
+    height: 25px;
+    width: 25px;
+    margin: 0 4px;
+    align-items: center;
+    line-height: 33px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    color: #fff;
+    background: #12121221;
+    transition: all 0.4s ease;
+}
+
+.card .content .countries-icons .tooltip{
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted rgba(97, 0, 253, 0.055);
+}
+
+.card .content .countries-icons .tooltip .tooltiptext{
+    visibility: hidden;
+    width: 120px;
+    background-color: #e100ff;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 4px 0px;
+
+      /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.card .content .countries-icons .tooltip:hover .tooltiptext{
+    visibility: visible;
+}
+
+
+.card .content .countries-icons img:hover{
+    border-color: #fff;
+    color: #fff;
+    background: #fff;
+}
+
+.button{
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+}
+
+.button label{
+    height: 15px;
+    width: 15px;
+    background: #8c8484;
+    margin: 0 4px;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+
+}
+
+.button label.active{
+    width: 35px;
+}
+
+#one:checked ~ .button label.one{
+    width: 35px;
+}
+
+#two:checked ~ .button label.two{
+    width: 35px;
+}
+
+#two:checked ~ .button label.one{
+    width: 15px;
+}
+
+#one:checked ~ .button label.two{
+    width: 15px;
+}
+
+
+input[type="radio"]{
+    display: none;
+}
